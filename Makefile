@@ -3,4 +3,4 @@ CPP=g++
 NVCC=nvcc
 ARCH=sm_30
 INC=-I/usr/local/cuda/include/
-NVCCFLAGS=-Wal
+NVCCFLAGS=-Wall -Wextr
