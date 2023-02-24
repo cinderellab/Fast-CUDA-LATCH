@@ -9,4 +9,4 @@ LIBS=-L/usr/local/cuda/lib64 -lcudart -lopencv_core -lopencv_features2d -lopencv
 CPPSOURCES=$(wildcard *.cpp)
 CUSOURCES=$(wildcard *.cu)
 
-OBJECTS=$(CPPSOURCES:.cp
+OBJECTS=$(CPPSOURCES:.cpp=.o) $
