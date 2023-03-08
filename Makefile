@@ -11,4 +11,4 @@ CUSOURCES=$(wildcard *.cu)
 
 OBJECTS=$(CPPSOURCES:.cpp=.o) $(CUSOURCES:.cu=.o)
 
-all: $(CPPSOURCES) $(CUS
+all: $(CPPSOURCES) $(CUSOURCES) $(EXECU
