@@ -16,4 +16,5 @@ all: $(CPPSOURCES) $(CUSOURCES) $(EXECUTABLE_NAME)
 $(EXECUTABLE_NAME) : $(OBJECTS)
 	$(CPP) $(CPPFLAGS) $(OBJECTS) -o $@ $(LIBS)
 
-%.
+%.o:%.cpp
+	$(CPP) -c
