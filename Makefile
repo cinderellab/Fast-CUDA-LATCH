@@ -17,4 +17,6 @@ $(EXECUTABLE_NAME) : $(OBJECTS)
 	$(CPP) $(CPPFLAGS) $(OBJECTS) -o $@ $(LIBS)
 
 %.o:%.cpp
-	$(CPP) -c $(INC) $(CPPFLAGS) $< -o 
+	$(CPP) -c $(INC) $(CPPFLAGS) $< -o $@
+
+%.o:%.
