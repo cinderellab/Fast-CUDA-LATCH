@@ -19,4 +19,5 @@ $(EXECUTABLE_NAME) : $(OBJECTS)
 %.o:%.cpp
 	$(CPP) -c $(INC) $(CPPFLAGS) $< -o $@
 
-%.o:%.
+%.o:%.cu
+	$(NVCC
