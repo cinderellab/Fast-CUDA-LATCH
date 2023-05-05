@@ -20,4 +20,4 @@ $(EXECUTABLE_NAME) : $(OBJECTS)
 	$(CPP) -c $(INC) $(CPPFLAGS) $< -o $@
 
 %.o:%.cu
-	$(NVCC) --use_fast
+	$(NVCC) --use_fast_math -arc
