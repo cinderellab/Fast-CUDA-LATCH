@@ -20,4 +20,6 @@ $(EXECUTABLE_NAME) : $(OBJECTS)
 	$(CPP) -c $(INC) $(CPPFLAGS) $< -o $@
 
 %.o:%.cu
-	$(NVCC) --use_fast_math -arch=$(ARCH) -O3 -ccbin $(CC) -std=c++11 -c $(INC) -Xcompiler "$(NVCCFLAGS)" $< -o 
+	$(NVCC) --use_fast_math -arch=$(ARCH) -O3 -ccbin $(CC) -std=c++11 -c $(INC) -Xcompiler "$(NVCCFLAGS)" $< -o $@
+
+cle
