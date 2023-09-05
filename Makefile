@@ -22,4 +22,5 @@ $(EXECUTABLE_NAME) : $(OBJECTS)
 %.o:%.cu
 	$(NVCC) --use_fast_math -arch=$(ARCH) -O3 -ccbin $(CC) -std=c++11 -c $(INC) -Xcompiler "$(NVCCFLAGS)" $< -o $@
 
-cle
+clean:
+	rm -r
